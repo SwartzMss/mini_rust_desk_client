@@ -1,0 +1,16 @@
+[package]
+name = "mini_rust_desk_client"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+mini_rust_desk_common = { git = "https://github.com/SwartzMss/mini_rust_desk_common", rev = "31e2d32cf1dff1896f8523e49b334af1137c3b0e"}
+flexi_logger = { version = "0.22", features = ["async", "use_chrono_for_offset", "dont_minimize_extra_stacks"] }
+async-trait = "0.1"
+crossbeam-queue = "0.3"
+scrap = { git = "https://github.com/SwartzMss/mini_rust_desk_scrap", rev = "693f055fb21850bf19383ce2ada8029073cf7863"}
+sha2 = "0.10"
+lazy_static = "1.4"
+sciter-rs = { git = "https://github.com/open-trade/rust-sciter", branch = "dyn" }
+
